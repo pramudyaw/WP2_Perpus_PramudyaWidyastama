@@ -4,7 +4,8 @@ class Autentifikasi extends CI_Controller
 { 
  
     public function index()     
-    {         //jika statusnya sudah login, maka tidak bisa mengakses halaman login alias dikembalikan ke tampilan user         
+    {         
+        //jika statusnya sudah login, maka tidak bisa mengakses halaman login alias dikembalikan ke tampilan user         
         if($this->session->userdata('email')){             
             redirect('user');         
         } 
